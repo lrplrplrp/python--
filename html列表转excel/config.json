@@ -1,0 +1,14 @@
+[
+    {
+        "colName":"url",
+        "lable":"img",
+        "className":"",
+        "prop":"src"
+    },
+    {
+        "colName":"name",
+        "lable":"span",
+        "className":"el-tooltip value",
+        "prop":"string"
+    }
+]
