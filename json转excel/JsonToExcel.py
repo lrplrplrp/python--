@@ -8,6 +8,6 @@ def change_file_extension(file_path, new_extension):
     return new_file_path
 
 for filename in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), '*.txt')):
-    df = pd.read_json(filename)
+    df = pd.read_json(filename,dtype=object)
     df=df.astype(str)
     df.to_excel(change_file_extension(filename, 'xlsx'), index=False)
